@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 import os
+import numpy as np
 
 app = Flask(__name__)
 
@@ -145,6 +146,9 @@ def contact():
 def contact_messages():
     messages = Contact.query.order_by(Contact.created_at.desc()).all()
     return jsonify([m.to_dict() for m in messages])
+
+def class :
+    __init__():
 
 
 if __name__ == '__main__':
