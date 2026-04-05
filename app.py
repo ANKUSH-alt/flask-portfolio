@@ -147,6 +147,9 @@ def contact_messages():
     messages = Contact.query.order_by(Contact.created_at.desc()).all()
     return jsonify([m.to_dict() for m in messages])
 
+def class :
+    __init__():
+
 
 if __name__ == '__main__':
     with app.app_context():
